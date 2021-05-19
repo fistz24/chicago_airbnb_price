@@ -1,0 +1,33 @@
+{
+  "name": "chicago_airbnb_price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "d3.js",
+  "version" : "1.0.0",
+  "engines":{
+    "node":"14.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "build:watch": "rollup -w -c",
+    "browser": "browser-sync --watch scrits/bundle.js",
+    "watch": "npm-run-all --parallel browser build:watch"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "latest",
+    "browser-sync": "^2.26.14",
+    "npm-run-all": "^4.1.5",
+    "rollup": "latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "pusher": "^5.0.0"
+  }
+}
